@@ -63,7 +63,9 @@ if(e.key === "Enter") {
 function tarefaConcluida(e) {
     const li = e.target
 
-    li.classList.toggle("concluida")
+    li.classList.toggle('concluida')
+
+    lista.classList.remove('concluida')
 
     salvarTarefas()
 }

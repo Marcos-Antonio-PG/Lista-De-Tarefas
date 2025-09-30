@@ -1,0 +1,81 @@
+.titulo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Bangers";
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#inputTarefa {
+    border: 3px solid #c1c1c1;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.btn-adicionar, .btn-remover{
+    color: #fff;
+    background: #e02323;
+    border-radius: 25px;
+    padding: 10px;
+    border: solid 3px #000000;
+}
+
+.btn-remover {
+    display: flex;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-lista {
+    font-size: 15px;
+    font-weight: 600;
+    width: max-content;
+    text-align:center;
+    cursor: pointer;
+}
+
+.item-lista:hover {
+    color: #3d3d3d;
+}
+
+.item-lista.concluida {
+    color: #9e9e9e;
+    position: relative;
+}
+
+.concluida::after {
+    content: "";
+    right: 0;
+    background-color: #9e9e9e;
+    left: 0;
+    top: 55%;
+    bottom: 0;
+    position: absolute;
+    height: 1px;
+    transform: translateY(-50%);
+    z-index: 0;
+    left: 10px;
+}
+
+.concluida::before {
+    content: "\2713";
+    color: #00ff00;
+    z-index: 1;
+    position: relative;
+}

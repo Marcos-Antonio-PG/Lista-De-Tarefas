@@ -13,4 +13,4 @@ O botão "Remover Tarefas Concluídas" funciona da seguinte maneira, caso tenha 
 
 Armazenamento Local:
 
-Com o uso de JSON o JavaScript converte a lista em string e a salva, quando o usuário recarrega a página o JavaScript remonta a lista convertendo novamente de string para object novamente, assim não é necessário criar a lista de tarefas do zero toda vez que acessar o site.
+Com o uso de JSON o JavaScript converte a lista em string e a salva, quando o usuário recarrega a página o JavaScript remonta a lista convertendo de string para object novamente, assim não é necessário criar a lista de tarefas do zero toda vez que acessar o site.
